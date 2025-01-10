@@ -1,0 +1,31 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        This algorithm finds if a number is a palindrome without converting it to a string.
+        
+        """
+        if x < 0:
+           # if the number is negative, then it is not a palindrome
+            return bool(False)
+        else:
+            #Convert the number to a list
+            digits = []
+            while x > 0:
+                digits.insert(0, x%10)
+                x//=10
+
+            #Copy the list in reverse order and store the first digit of each
+            total1 = digits[0]
+            rev_digits = digits[::-1]
+            total2 = rev_digits[0]
+           
+           #Iteratively subtract each digit from the previous one in the list
+           #If the differences are equal, then it is a palindrome
+            for i in range(len(digits)-1):
+                pt1 = digits[i+1]
+                total1 = total1 - pt1
+                pt2 = rev_digits[i+1]
+                total2 = total2 - pt2
+                return total1 == total2
