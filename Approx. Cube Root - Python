@@ -1,0 +1,30 @@
+# This function approximates the cube root of a given number using the bisection method.
+def approximate_cube_root(x, epsilon):
+  cube = abs(x)
+  # for cube > 1
+  if cube > 1:
+    low = 1
+    high = cube
+  # for cube <= 1
+  else:
+    low = cube
+    high = 1
+  guess = (low + high)/2 
+  guesses = 1
+  #approximate cube root using bisection method
+  while abs(guess**3 - cube) >= epsilon and low <= high:
+    if guess**3 < cube:
+       low = guess
+    else:
+       high = guess
+    guess = (low + high)/2
+    guesses += 1
+  # cover the case of negative numbers
+  if x < 0:
+    guess = -(guess)
+  if abs(guess**3 - x) > epsilon:
+    print("Couldn't approximate with this precision, please increase epsilon.")
+    return False
+  else:
+    print(f"Found cube root as {guess} for {x} after {guesses} guesses.")
+    return True
