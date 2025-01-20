@@ -28,4 +28,4 @@ class Solution(object):
                 total1 = total1 - pt1
                 pt2 = rev_digits[i+1]
                 total2 = total2 - pt2
-                return total1 == total2
+            return total1 == total2
