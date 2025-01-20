@@ -3,7 +3,7 @@ class Solution(object):
         """
         :type x: int
         :rtype: bool
-        This is a simple algorithm that checks if a number is a palindrome 
+        This is a simple code that checks if a number is a palindrome 
         by converting it to a string
         
         """
