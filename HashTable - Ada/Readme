@@ -1,4 +1,4 @@
-This folder contains the files from my hash table program.
+This folder contains the files from my hash table program. All files are written in Ada.
 
 It takes a .txt file where each row has a string of characters and hashes 100 rows into a table of size 128 using a hash function I wrote.
 It then calculates the minimum, maximum, and average number of probes needed to find the first 25 and last 25 keys hashed into the 
