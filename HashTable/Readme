@@ -1,6 +1,6 @@
 This folder contains the files from my hash table program.
 
-It takes a .txt file where each row has a word or some string of alphabetic characters and hashes 100 rows into a table using a hash function I wrote.
+It takes a .txt file where each row has a string of characters and hashes 100 rows into a table of size 128 using a hash function I wrote.
 It then calculates the minimum, maximum, and average number of probes needed to find the first 25 and last 25 keys hashed into the 
 table using linear collision handling.
 Next, it prints the entire hash table, including the final hash address, key, original hash address, and number of probes to find the key.
@@ -9,4 +9,4 @@ theoretical average.
 
 It then re-initializes the table and repeats the process using random collision handling.
 
-The output is a .txt file, see file HashTableOutput.
+The output is a .txt file, see file AMyOutput.
