@@ -6,8 +6,8 @@ import java.util.Scanner;
 /**
  *
  * @author Lexie Bardwell
- *  COSC 4327-01
- *  Assignment #2 Scheduling Program
+ *  
+ *  CPU Process Scheduling Simulator
  */
 public class SchedulingSim {
      public static void main(String[] args) throws FileNotFoundException{
